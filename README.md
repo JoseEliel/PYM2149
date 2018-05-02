@@ -1,11 +1,20 @@
 # PYM2149
-Interfacing a YM2149 sound generating chip with any USB MIDI controller using an Arduino UNO. 
+Interfacing a YM2149 sound generating chip with any USB MIDI controller using an Arduino UNO. Both the USB MIDI controller and the arduino should be connected to a computer running the provided Python code. 
+
+# Features
+
+
 The setup has two main parts: 
 
 * C code for the arduino microcontroller to be able to talk to the YM2149 chip. This part makes use of the code makes use of an extension of Florent Flament's code in https://github.com/FlorentFlament/ym2149-test. It adds up extra features: Defines the necessary notes for driving 4 octaves including sharp notes, it adds the functionality to control volume and pitch with MIDI channels defined in the python code and the possibility on putting an envelope to the output also using a MIDI channel defined in the python code. 
 
 * Python code for reading in the input from a USB MIDI Controller and translating it into intructions for the arduino to talk to the YM2149 chip, with the possibility of assigning MIDI channels to pitch, volume and envelope. It uses the MIDI interface features included in Pygame modules (http://www.pygame.org)
 
+# Contents
+
+ArduinoFirmware - The code to be uploaded to the Arduino board.
+
+PYM - Python code to interface the USB MIDI controller to the YM2149 sound generating chip.
 
 # Quick start
 
@@ -32,6 +41,7 @@ Timestamp: 58103ms, Channel: 62, Value: 73
 
 Timestamp: 58162ms, Channel: 64, Value: 0
 ([1, 0, 1], [53, 64, 62])
-Timestamp: 58194ms, Channel: 53, Value: 0
+
+
 
 
