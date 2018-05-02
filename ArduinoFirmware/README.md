@@ -1,4 +1,4 @@
-#Arduino Firmware for PYM2149
+# Arduino Firmware for PYM2149
 
 C code for the arduino microcontroller to be able to talk to the YM2149 chip. This part makes use of the code makes use of an extension of Florent Flament's code in https://github.com/FlorentFlament/ym2149-test. It adds up extra features: Defines the necessary notes for driving 4 octaves including sharp notes, it adds the functionality to control volume and pitch with MIDI channels defined in the python code and the possibility on putting an envelope to the output also using a MIDI channel defined in the python code. 
 
