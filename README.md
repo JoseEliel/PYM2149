@@ -13,12 +13,15 @@ The setup has two main parts:
 Due to timing issues the code for the microcontroller has to be uploaded to the Arduino without using the Arduino IDE. You can follow Florent Flament's tutorial here: http://www.florentflament.com/blog/arduino-hello-world-without-ide.html. Use the code in the ArduinoFirmware folder. Be sure to change the Makefile to have the correct port for the Arduino's serial communication.
 
 * Setup the electronics 
+
 Follow the schematics for setting up your circuit as in https://github.com/FlorentFlament/ym2149-test. 
 
 * Setup your USB MIDI controller
+
 Add to the Python code in the PYM folder the correct port for your MIDI input. 
 
 * Ready, Steady, Go! 
+
 Just run pym.py in the command line. The code should print pressed notes as: 
 
 Timestamp: 58075ms, Channel: 53, Value: 17
