@@ -26,8 +26,10 @@ Just run pym.py in the command line. The code should print pressed notes as:
 
 Timestamp: 58075ms, Channel: 53, Value: 17
 ([1, 1, 0], [53, 64, 53])
+
 Timestamp: 58103ms, Channel: 62, Value: 73
 ([1, 1, 1], [53, 64, 62])
+
 Timestamp: 58162ms, Channel: 64, Value: 0
 ([1, 0, 1], [53, 64, 62])
 Timestamp: 58194ms, Channel: 53, Value: 0
