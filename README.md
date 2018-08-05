@@ -6,7 +6,7 @@ Interfacing a YM2149 sound generating chip with any USB MIDI controller using an
 
 The setup has two main parts: 
 
-* C code for the arduino microcontroller to be able to talk to the YM2149 chip. This part makes use of the code makes use of an extension of Florent Flament's code in https://github.com/FlorentFlament/ym2149-test. It adds up extra features: Defines the necessary notes for driving 4 octaves including sharp notes, it adds the functionality to control volume and pitch with MIDI channels defined in the python code and the possibility on putting an envelope to the output also using a MIDI channel defined in the python code. 
+* C code for the arduino microcontroller to be able to talk to the YM2149 chip. This part builds on Florent Flament's code in https://github.com/FlorentFlament/ym2149-test. It adds up extra features: Defines the necessary notes for driving 4 octaves including sharp notes, it adds the functionality to control volume and pitch with MIDI channels defined in the python code and the possibility on putting an envelope to the output also using a user defined MIDI channel. 
 
 * Python code for reading in the input from a USB MIDI Controller and translating it into intructions for the arduino to talk to the YM2149 chip, with the possibility of assigning MIDI channels to pitch, volume and envelope. It uses the MIDI interface features included in Pygame modules (http://www.pygame.org)
 
@@ -19,7 +19,7 @@ PYM - Python code to interface the USB MIDI controller to the YM2149 sound gener
 # Quick start
 
 * Upload the code to the Arduino: 
-Due to timing issues the code for the microcontroller has to be uploaded to the Arduino without using the Arduino IDE. You can follow Florent Flament's tutorial here: http://www.florentflament.com/blog/arduino-hello-world-without-ide.html. Use the code in the ArduinoFirmware folder. Be sure to change the Makefile to have the correct port for the Arduino's serial communication.
+Due to timing issues the code for the microcontroller has to be uploaded to the microcontroller manually, without using the Arduino IDE. You can follow Florent Flament's tutorial here: http://www.florentflament.com/blog/arduino-hello-world-without-ide.html. Use the code in the ArduinoFirmware folder. Be sure to change the Makefile to have the correct port for the Arduino's serial communication.
 
 * Setup the electronics 
 
