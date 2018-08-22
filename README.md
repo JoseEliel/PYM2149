@@ -42,6 +42,10 @@ Timestamp: 58103ms, Channel: 62, Value: 73
 Timestamp: 58162ms, Channel: 64, Value: 0
 ([1, 0, 1], [53, 64, 62])
 
+# Want to hear it working ? 
 
+Track with this setup, using pitch, volume and envelope effects.
+
+https://soundcloud.com/slbeatle/ym2149
 
 
